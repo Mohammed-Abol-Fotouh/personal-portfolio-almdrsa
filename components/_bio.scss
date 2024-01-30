@@ -1,0 +1,80 @@
+@import "./mixins";
+
+.bio {
+	@include twoColumns(7.4rem, 0);
+}
+
+.bio__heading {
+	@include font(var(--font-size-70), var(--font-weight-bold));
+}
+
+.bio__objective {
+	font-family: var(--font-family-poppins);
+	@include font(var(--font-size-20), var(--font-weight-regular));
+	margin: 3rem 0 8rem;
+}
+
+.bio__name {
+	font-weight: var(--font-weight-semi-bold);
+}
+
+.bio__links {
+	@include font(2.4rem, var(--font-weight-semi-bold));
+	text-decoration: none;
+}
+
+.bio__linkedin {
+	color: var(--color-dark-blue);
+}
+.say-hi-link {
+	background-color: var(--color-link-bg);
+	color: var(--color-white);
+	padding: 0.7rem 4.7rem;
+}
+
+.find-out-link {
+	padding: 0.7rem 0;
+	margin-inline-start: 1.4rem;
+}
+
+@keyframes jumb {
+	0% {
+		transform: translateY(0.5rem);
+	}
+	35% {
+		transform: translateY(-0.5rem);
+	}
+	70% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.bio__arrow {
+	display: inline-block;
+	animation: jumb 1s infinite alternate ease-in-out;
+}
+
+.bio__pic-content {
+	display: flex;
+	position: relative;
+	align-items: flex-end;
+	justify-self: end;
+}
+
+.bio__pic-content::before {
+	content: "";
+	position: absolute;
+	background-color: var(--color-box-img);
+	@include widthAndHeight(100%, 48rem);
+	z-index: -1;
+	border-radius: 1.8rem;
+	box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
+}
+
+.bio__pic {
+	@include widthAndHeight(42.7rem, auto);
+	border-radius: 1.8rem;
+}

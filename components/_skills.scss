@@ -1,0 +1,22 @@
+@import "./mixins";
+
+.skills__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 5rem;
+}
+
+.skills__list-item {
+	font-size: var(--font-size-20);
+	margin-top: 1rem;
+	transition: var(--transition-timing);
+	user-select: none;
+}
+
+.skills__list-item:hover {
+	text-shadow: 0 0 2px var(--color-green);
+}
+
+.list__item-heading {
+	@include font(var(--font-size-38), var(--font-weight-semi-bold));
+}

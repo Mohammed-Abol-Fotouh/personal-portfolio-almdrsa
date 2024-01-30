@@ -1,0 +1,15 @@
+@mixin twoColumns($column-gap: 0, $row-gap: 0) {
+	column-gap: $column-gap;
+	row-gap: $row-gap;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin font($font-size, $font-weight) {
+	font-size: $font-size;
+	font-weight: $font-weight;
+}
+
+@mixin widthAndHeight($width, $height) {
+	width: $width;
+	height: $height;
+}

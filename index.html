@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Mohammed Abol Fotouh</title>
+</head>
+
+<body>
+  <div class="container">
+    <video class="video-loop" autoplay loop muted>
+      <source src="./video-loop.mp4" type="video/mp4">
+    </video>
+    <header class="header">
+      <label for="menu" class="burger-menu">
+        <div class="burger-menu__bar"></div>
+        <div class="burger-menu__bar"></div>
+        <div class="burger-menu__bar"></div>
+      </label>
+      <input id="menu" class="burger-menu__checkbox" type="checkbox">
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li><a href="#bio" class="navigation__link navigation__bio">Bio</a></li>
+          <li><a href="#skills" class="navigation__link navigation__skills">Skills</a></li>
+          <li><a href="#media" class="navigation__link navigation__media">Media</a></li>
+          <li><a href="#projects" class="navigation__link navigation__projects">Projects</a></li>
+          <li><a href="#clients" class="navigation__link navigation__clients">My Clients</a></li>
+          <li><a href="#contact" class="navigation__link navigation__contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="toggle">
+        <h3 class="toggle_title">Switch Theme</h3>
+        <input type="checkbox" name="toggle checkbox" id="toggle" class="toggle__checkbox">
+        <label for="toggle" class="toggle__label"></label>
+      </div>
+    </header>
+
+    <section id="bio" class="bio section">
+      <div class="bio__data">
+        <h1 class="bio__heading">Hi There, I’M A Passionate Frontend Developer</h1>
+        <p class="bio__objective">I'm <span class="bio__name">Mohammed Abol Fotouh</span>, a self-taught frontend
+          developer. Passionate about enhance my
+          skills and stay up to date to the latest trends in web development. reach me on <a class="bio__linkedin"
+            href="https://www.linkedin.com/in/mohammed-abol-fotouh/">LinkedIn</a> and <a class="bio__github"
+            href="https://github.com/Mohammed-Abol-Fotouh">Github</a>.</p>
+        <a href="#contact" class="bio__links say-hi-link">Say hi</a>
+        <a href="./resume-Mofotouh.pdf" class="bio__links find-out-link">Download CV <span
+            class="bio__arrow">↓</span></a>
+      </div>
+      <div class="bio__pic-content">
+        <img class="bio__pic" src="./images/personal-pic.png" alt="pic of Mohammed Abol Fotouh">
+      </div>
+    </section>
+
+    <section id="skills" class="skills section section-with-bg">
+      <h2 class="h2-heading">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item">
+          <h3 class="list__item-heading">HTML</h3>
+          8 years
+        </li>
+        <li class="skills__list-item">
+          <h3 class="list__item-heading">CSS</h3>
+          8 years
+        </li>
+        <li class="skills__list-item">
+          <h3 class="list__item-heading">Javascript</h3>
+          8 years
+        </li>
+        <li class="skills__list-item">
+          <h3 class="list__item-heading">React</h3>
+          4 years
+        </li>
+        <li class="skills__list-item">
+          <h3 class="list__item-heading">Redux</h3>
+          3 years
+        </li>
+        <li class="skills__list-item">
+          <h3 class="list__item-heading">React testing library</h3>
+          1 year
+        </li>
+      </ul>
+    </section>
+
+    <section id="media" class="media section">
+      <video class="media__video" controls>
+        <source src="./video.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="projects" class="projects section">
+      <h2 class="h2-heading">My Featured <br> Projects</h2>
+      <div class="projects__main">
+        <img class="projects__img responsive-img" src="./images/project-1.png" alt="Expense tracker">
+        <div class="projects__data">
+          <h3 class="h3-heading">
+            Expense Tracker
+          </h3>
+          <p class="projects__description">
+
+            Introducing the Expense Tracker: a Python app with a tkinter GUI for easy expense management. Developed as
+            part of Almdrasa's initial stage, it allows users to input expenses and dynamically converts totals to USD
+            using a currency API. With its intuitive design and automatic updates, the Expense Tracker simplifies
+            financial tracking. Check out the GitHub repository for more details.
+          </p>
+          <a class="projects__link" href="https://github.com/Mohammed-Abol-Fotouh/expense-tracker"
+            target="_blank">Github Link</a>
+        </div>
+
+        <div class="projects__data">
+          <h3 class="h3-heading">
+            Weather Forecast
+          </h3>
+          <p class="projects__description">
+            Introducing the Weather App: a Python application with a tkinter GUI for easy weather tracking. Developed as
+            part of Almdrasa's first stage, it allows users to explore real-time weather data worldwide. With intuitive
+            city search functionality and key weather metrics like temperature and humidity, this app simplifies weather
+            tracking. Leveraging Python's tkinter library and requests library for API integration, it's a streamlined
+            solution for staying informed about weather conditions. Check out the GitHub repository for more details.
+          </p>
+          <a class="projects__link" href="https://github.com/Mohammed-Abol-Fotouh/Weather-app" target="_blank">Github
+            Link</a>
+        </div>
+        <img class="projects__img responsive-img" src="./images/project-2.png" alt="Weather Forecast">
+      </div>
+    </section>
+
+    <section id="clients" class="clients section section-with-bg">
+      <h2 class="h2-heading">What My <br>Clients Says.</h2>
+
+      <div class="clients__opinions">
+        <div class="clients__wrapper">
+          <p class="clients__opinion">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ea amet, iste consequatur inventore
+            perspiciatis iusto accusantium nisi maiores doloribus, natus dolores? Commodi velit molestias fuga
+            consequuntur doloremque sunt nesciunt.
+          </p>
+          <p class="clients__opinion">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id nihil cum temporibus veritatis laboriosam,
+            repellat ullam natus quia velit illo maiores fugit recusandae. Adipisci, velit atque rerum quisquam ea
+            neque!
+          </p>
+          <p class="clients__opinion">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum at voluptate natus corporis autem. Ipsa
+            corporis aut recusandae, iure cupiditate accusantium illo mollitia quia excepturi, repellendus minus.
+            Dignissimos, fugit quo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div>
+        <p class="contact__description">
+          Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time
+          zones away.
+        </p>
+
+        <a href="mailto: moabolfotouh@gmail.com" class="contact__email">moabolfotouh@gmail.com</a>
+
+        <div class="contact__socials">
+          <a class="contact__social" href="#">
+            <img src="./images/brand/facebook.svg" alt="facebook">
+          </a>
+          <a class="contact__social" href="#">
+            <img src="./images/brand/twitter.svg" alt="twitter">
+          </a>
+          <a class="contact__social" href="#">
+            <img src="./images/brand/youtube.svg" alt="youtube">
+          </a>
+          <a class="contact__social" href="https://github.com/Mohammed-Abol-Fotouh">
+            <img src="./images/brand/github.svg" alt="github">
+          </a>
+          <a class="contact__social" href="#">
+            <img src="./images/brand/instagram.svg" alt="instagram.svg">
+          </a>
+          <a class="contact__social" href="https://www.linkedin.com/in/mohammed-abol-fotouh/">
+            <img src="./images/brand/LinkedIn.svg" alt="LinkedIn.svg">
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__formContent">
+        <h2 class="h2-heading">
+          Let’s Work <br>
+          Together!
+        </h2>
+        <form action="results.html">
+          <div class="contact__inputs">
+            <input type="text" class="contact__input" name="name" placeholder="Full Name" required="">
+            <!-- <input type="email" class="contact__input" placeholder="Email" required /> -->
+            <input type="tel" class="contact__input" placeholder="Phone No." name="tel" required=""
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+          </div>
+          <textarea class="contact__input contact__textarea" name="message" placeholder="Your Message" rows="1"
+            required=""></textarea>
+          <input type="submit" class="contact__button" value="Send Message">
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">&copy; 2024 Mohammed Abol Fotouh</footer>
+  </div>
+</body>
+
+</html>
